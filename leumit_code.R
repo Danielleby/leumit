@@ -100,26 +100,26 @@ teams$attempt_3 <- stri_sub(teams$attempt_3, -2, -1)
 teams$attempt_ft <- stri_sub(teams$attempt_ft, -2, -1)
 
 # change values over data frame #using r base
-teams[teams == "ç"] <- "away"
-teams[teams == "á"] <- "home"
-teams[teams == "ð"] <- "win"
-teams[teams == "ä"] <- "loss"
+teams[teams == "×—"] <- "away"
+teams[teams == "×‘"] <- "home"
+teams[teams == "× "] <- "win"
+teams[teams == "×”"] <- "loss"
 
 #change teams names from hebrew to english
-teams[teams == "îëáé òéøåðé øîú âï"] <- "Maccabi Ironi Ramat-Gan"
-teams[teams == "àìéöåø àù÷ìåï"] <- "Elizur Ashkelon"
-teams[teams == "äôåòì øîú âï âáòúééí"] <- "Hapoel Ramat-Gan Givatayim"
-teams[teams == "îëáé ð÷ñè àåøáï çéôä"] <- "Maccabi Haifa"
-teams[teams == "òéøåðé øòððä"] <- "Ironi Raanana"
-teams[teams == "äôåòì îâä àåø çáì îåãéòéï"] <- "Hapoel Hevel Modiin"
-teams[teams == "òéøåðé ðäøéä"] <- "Ironi Nahariya"
-teams[teams == "äôåòì îâãì äòî÷ éæøòàì"] <- "Hapoel Migdal Haemeq Izrael"
-teams[teams == "îëáé îòìä àãåîéí" ]<- "Maccabi Maale Adumim"
-teams[teams == "òéøåðé ÷øééú àúà"] <- "Ironi Kiryat Ata"
-teams[teams == "à.ñ øîú äùøåï"] <- "AS Ramat Hasharon"
-teams[teams == "îëáé ñðå äåã äùøåï"] <- "Maccabi Hod Hasharon"
-teams[teams == "äôåòì òôåìä"] <- "Hapoel Afula"
-teams[teams == "àìéöåø BRIGA ðúðéä"] <- "Elitzur Nataniya"
+teams[teams == "×ž×›×‘×™ ×¢×™×¨×•× ×™ ×¨×ž×ª ×’×Ÿ"] <- "Maccabi Ironi Ramat-Gan"
+teams[teams == "××œ×™×¦×•×¨ ××©×§×œ×•×Ÿ"] <- "Elizur Ashkelon"
+teams[teams == "×”×¤×•×¢×œ ×¨×ž×ª ×’×Ÿ ×’×‘×¢×ª×™×™×"] <- "Hapoel Ramat-Gan Givatayim"
+teams[teams == "×ž×›×‘×™ × ×§×¡×˜ ××•×¨×‘×Ÿ ×—×™×¤×”"] <- "Maccabi Haifa"
+teams[teams == "×¢×™×¨×•× ×™ ×¨×¢× × ×”"] <- "Ironi Raanana"
+teams[teams == "×”×¤×•×¢×œ ×ž×’×” ××•×¨ ×—×‘×œ ×ž×•×“×™×¢×™×Ÿ"] <- "Hapoel Hevel Modiin"
+teams[teams == "×¢×™×¨×•× ×™ × ×”×¨×™×”"] <- "Ironi Nahariya"
+teams[teams == "×”×¤×•×¢×œ ×ž×’×“×œ ×”×¢×ž×§ ×™×–×¨×¢××œ"] <- "Hapoel Migdal Haemeq Izrael"
+teams[teams == "×ž×›×‘×™ ×ž×¢×œ×” ××“×•×ž×™×" ]<- "Maccabi Maale Adumim"
+teams[teams == "×¢×™×¨×•× ×™ ×§×¨×™×™×ª ××ª×"] <- "Ironi Kiryat Ata"
+teams[teams == "×.×¡ ×¨×ž×ª ×”×©×¨×•×Ÿ"] <- "AS Ramat Hasharon"
+teams[teams == "×ž×›×‘×™ ×¡× ×• ×”×•×“ ×”×©×¨×•×Ÿ"] <- "Maccabi Hod Hasharon"
+teams[teams == "×”×¤×•×¢×œ ×¢×¤×•×œ×”"] <- "Hapoel Afula"
+teams[teams == "××œ×™×¦×•×¨ BRIGA × ×ª× ×™×”"] <- "Elitzur Nataniya"
 
 ### export file ### using readr library
 write.csv(teams, "C:/Users/danie/Desktop/data practice/R/Shomron/teams//teams.csv")
